@@ -1,0 +1,17 @@
+management:
+  endpoints:
+    enabled-by-default: false
+    web:
+      exposure:
+        include: "health, prometheus"
+  endpoint:
+    health.enabled: true
+    prometheus.enabled: true
+
+logging:
+  file:
+    path: /Users/Krevis/logs/spring-boot-app
+  logback:
+    rollingpolicy:
+      max-file-size: 1KB
+      max-history: 7
